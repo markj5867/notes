@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+
+
+struct Smartphone{
+    string name;
+    int storageSpace;
+    string color;
+    float price;
+};
+
+void printSmartphoneInfo(Smartphone smartphone){
+    cout << "Name: " << smartphone.name << endl;
+    cout << "Storage space: " << smartphone.storageSpace << " GB" << endl;
+    cout << "Color: " << smartphone.color << endl;
+    cout << "Price: " << smartphone.price << endl;
+}
+
+int main()
+{
+
+    Smartphone smartphone;
+    smartphone.name = "iPhone 12";
+    smartphone.storageSpace = 32;
+    smartphone.color = "black";
+    smartphone.price = 999.99;
+    
+    Smartphone smartphone2;
+    smartphone2.name = "SG";
+    smartphone2.storageSpace = 64;
+    smartphone2.color = "gray";
+    smartphone2.price = 888.88;
+    
+    printSmartphoneInfo(smartphone);
+    printSmartphoneInfo(smartphone2);
+    
+    
+    
+    
+}
